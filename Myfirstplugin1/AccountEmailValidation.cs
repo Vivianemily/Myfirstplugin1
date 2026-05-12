@@ -14,7 +14,7 @@ public class AccountEmailValidation : IPlugin
             if (entity.LogicalName != "account")
                 return;
 
-            string email = entity.GetAttributeValue<string>("emailaddress1");
+            string email = entity.GetAttributeValue<string>("emailaddress");
 
             if (string.IsNullOrEmpty(email))
             {
